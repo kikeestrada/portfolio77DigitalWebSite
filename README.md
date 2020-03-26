@@ -1,3 +1,3 @@
-# 77Digital
+# 77Digital gh-pages
 
-##https://kikeestrada.github.io/77Digital/
+## https://kikeestrada.github.io/portfolio77DigitalWebSite/
