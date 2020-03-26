@@ -608,13 +608,13 @@ p {
 
 /* Slider */
 .slick-loading .slick-list {
-  background: #fff url("./ajax-loader.gif") center center no-repeat; }
+  background: #fff url("ajax-loader.gif") center center no-repeat; }
 
 /* Icons */
 @font-face {
   font-family: "slick";
-  src: url("./fonts/../fonts/slick-fonts/slick.eot");
-  src: url("./fonts/../fonts/slick-fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/../fonts/slick-fonts/slick.woff") format("woff"), url("./fonts/../fonts/slick-fonts/slick.ttf") format("truetype"), url("./fonts/../fonts/slick-fonts/slick.svg#slick") format("svg");
+  src: url("../fonts/../fonts/slick-fonts/slick.eot");
+  src: url("../fonts/../fonts/slick-fonts/slick.eot?#iefix") format("embedded-opentype"), url("../fonts/../fonts/slick-fonts/slick.woff") format("woff"), url("../fonts/../fonts/slick-fonts/slick.ttf") format("truetype"), url("../fonts/../fonts/slick-fonts/slick.svg#slick") format("svg");
   font-weight: normal;
   font-style: normal; }
 /* Arrows */
@@ -814,7 +814,7 @@ p {
     height: 30px;
     background-size: 80%;
     background-position: 5px 6px;
-    cursor: url(index.html) pointer; }
+    cursor: url(public/index.html) pointer; }
     @media (min-width: 960px) {
       .top-nav figure {
         left: 0px; } }

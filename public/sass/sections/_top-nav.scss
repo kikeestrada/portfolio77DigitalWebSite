@@ -2,7 +2,7 @@
 	.container{
 		max-width: 100%;
 	}
-	
+
 	//border: 1px solid black;
 	width: 100%;
 	z-index: 4;
@@ -15,14 +15,14 @@
 		figure{
 			position: absolute;
 			left: -25px;
-			top: -23px;			
+			top: -23px;
 			background-image:url("../images/home/top-nav/top_nav_logo_sprite.png");
 			background-repeat: no-repeat;
 			width: 50px;
 			height: 30px;
             background-size: 80%;
             background-position: 5px 6px;
-            cursor:url(index.html)pointer;
+            cursor:url(public/index.html)pointer;
             @include bp(md) {left:0px;}//640
 
 		}
@@ -35,7 +35,7 @@
 			color: #000000;
 			font-size: 30px;
 			@include bp(md) {right: 50px;}//640
-		}		
+		}
 	}// boton hamburguesa
 
 	.smenu{
@@ -46,17 +46,17 @@
 			top: 10px;
 		}
 	}
-	
+
 	&.bg-gray{
 		background-color: rgba(41,43,42,.4);
 		a{
 			span{
 				color:#fff;
 			}
-		}		
+		}
 		figure{
 			background-image:url("../images/home/top-nav/top_nav_logo_sprite.png");
-			background-repeat: no-repeat;	
+			background-repeat: no-repeat;
             background-size: 80%;
             background-position: 5px -35px;
 		}
@@ -66,5 +66,5 @@
 		 {
 			width: 60px;
 			height: 60px;
-		 }		
+		 }
 }
