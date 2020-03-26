@@ -1,0 +1,49 @@
+.top-banner{
+margin:100px 0 100px 0;
+  .full-container{
+    background:#e3e3e3;
+    .container{
+      .row{
+        padding:60px 20px 60px 20px;
+        @include bp(sm) {padding:60px 30px 60px 30px;}
+        @include bp(md) {padding:60px 60px 60px 60px;}
+        .box{
+          float:left;
+          width:100%;
+          @include bp(xs) {width:100%;}//320
+          @include bp(md) {width:50%;}//640
+        }
+        .box:nth-child(1){
+          padding: 20px 0;
+          img{
+            float: left;
+            width: 50px;
+            @include bp(sm) {width: 70px;}
+            // @include bp(md) {width: 80px;}
+          }
+          h1{
+            padding-top: 5px;
+            text-align:left;
+            font-size:25px;
+            color:$tittle1;
+            @include bp(sm) {font-size:30px;}
+            @include bp(md) {font-size:40px;}
+          }
+        }
+        .box:nth-child(2){
+          height: 60px;
+          img{
+            width: 300px;
+            height: auto;
+            position: absolute;
+            top: 150%;
+            left: 50%;
+            transform: translate(-50%, -50%);    
+            @include bp(sm) {top: 140%;width: 400px;}
+            @include bp(md) {top: 180%;width: 500px;}
+          }
+        }
+      }
+    }
+  }
+}

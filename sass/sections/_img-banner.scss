@@ -1,0 +1,23 @@
+.img-banner{
+  width:100%;
+  height:auto;
+  .container{
+    .row{
+      .box{
+        padding: 0 10px 0 10px;
+        text-align:center;
+        margin:0 auto;
+        float:left;
+        width:100%;
+        @include bp(sm) {width:50%;text-align:center;padding: 0;}//640
+        @include bp(md) {width:25%;text-align:center;padding: 0;}//960
+          img{
+            width:100%;
+            height:auto;
+          }
+      }
+      .box:nth-child(1){}
+      .box:nth-child(2){}
+    }
+  }
+}

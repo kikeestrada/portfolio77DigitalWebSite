@@ -1,0 +1,96 @@
+.vision{
+  width:100%;
+  height:auto;
+  .container{
+    padding: 40px 20px;
+    .title{
+        h1,h2,h3{
+          margin: 0;
+        }
+        h3{
+          font-weight: normal; 
+          font-family: 'crimson_text'; 
+          color: #6e6e6e;
+          font-size: 15px;
+        }
+        h1{ 
+          color: #2e3092; 
+          font-size: 25px;
+          margin-top: 15px;
+        }
+        h2{
+          font-family: 'proxima_nova';
+          font-weight: normal;
+          font-size: 15px;
+          color: #6e6e6e;
+          margin-top: 30px;
+          margin-bottom: 30px;
+        }
+         @include bp(sm) {
+          h3{font-size: 20px}
+          h1{font-size: 40px}
+          h2{font-size: 20px}
+         }
+         @include bp(md) {
+          h3{font-size: 25px}
+          h1{font-size: 50px}
+          h2{font-size: 25px}
+         }
+
+      }
+    .row{
+      .box{
+        float: left;
+        width: 100%;
+        // border: 1px solid black;
+        @include bp(md) {
+          width: 50%;
+        }
+        div{
+          padding:20px;          
+          // border: 1px solid red;
+          float: left;
+          width: 100%;
+           @include bp(md) {
+              width: 50%;
+            }
+        }
+        div:nth-child(1){
+          img{
+            width: 100%;
+            height: auto;
+            max-width: 400px;
+          }
+        }
+        div:nth-child(2){
+          padding-top: 20px;
+           @include bp(sm) {padding-top: 20px;}
+           @include bp(md) {padding-top: 80px;}
+          h1{
+            color:$tittle1;
+            font-size: 24px;
+             @include bp(sm) {font-size: 35px;}
+             @include bp(md) {font-size: 35px;}
+          }
+          h2{
+            color: #2e3092;
+            font-family: 'proxima_nova';
+            font-weight: normal;
+            text-transform: uppercase;
+            margin: 0;
+            font-size: 16px;
+            @include bp(sm) {font-size: 18px;}
+          }
+          p{
+            font-size: 15px;
+            padding-top: 10px;
+            color: #4c4d4d;
+            font-family: 'crimson_text';
+             @include bp(sm) {font-size: 18px;}
+             @include bp(md) {font-size: 14px;}
+          }
+        }
+      }
+    }
+  }
+}

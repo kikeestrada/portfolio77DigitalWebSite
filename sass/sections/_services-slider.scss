@@ -1,0 +1,77 @@
+.services-slider{
+  display:block !important;
+  @include bp(xs) {display:none !important; }
+  padding:0;
+  position:relative;
+  height:auto;
+
+
+*:focus{
+  outline: none;
+}
+  //Home Slider Styles
+  //Definimos el 100% de alto y de ancho
+  .home-slider {
+    .slick-slide{
+      width: 100%;
+      .slick-dots {
+      	padding: 0 0;
+      }
+    }
+  }
+
+  .slide-1, .slide-2, .slide-3{
+    .row{
+      width:100% !important;
+      .box{
+        display:table;
+        width:100%;
+        float:left;
+        height:250px;
+        //border:solid 1px black;
+          .box-container{
+            display:table-cell;
+            vertical-align:middle;
+            margin:auto;
+          }
+        }
+        .bg-img{
+          background:$bg2;
+          .box-container{
+            height:100px;
+            width:100%;
+            text-align:center;
+            img{
+              width:100%;
+              height:auto;
+              background:$bg2;
+            }
+          }
+        }
+        .desc-cont{
+          .box-container{
+            height:100px;
+            width:80%;
+            div:nth-child(1){
+              padding-left:20px;
+              img{
+                float:left;
+                width:70px;
+              }
+              h1{
+                font-size:50px;
+                color:$tittle1;
+              }
+            }
+            div:nth-child(2){
+              p{
+                padding-top:20px;
+                font-size:15px;
+                text-align:center;
+              }
+            }
+          }
+        }
+      }
+  }
+}

@@ -1,0 +1,197 @@
+/* CLEARFIX */
+@mixin clearfix {
+  &:before,
+  &:after {
+      content: " "; /* 1 */
+      display: table; /* 2 */
+  }
+
+  &:after {
+      clear: both;
+  }
+}
+/*-- Usage --*/
+/*
+  @include clearfix;
+*/
+
+
+/* PX to REM */
+@function parseInt($n) {
+  @return $n / ($n * 0 + 1);
+}
+
+@mixin rem($property, $values) {
+  $px : ();
+  $rem: ();
+
+  @each $value in $values {
+
+    @if $value == 0 or $value == auto {
+      $px : append($px , $value);
+      $rem: append($rem, $value);
+    }
+
+    @else {
+      $unit: unit($value);
+      $val: parseInt($value);
+
+      @if $unit == "px" {
+        $px : append($px,  $value);
+        $rem: append($rem, ($val / 10 + rem));
+      }
+
+      @if $unit == "rem" {
+        $px : append($px,  ($val * 10 + px));
+        $rem: append($rem, $value);
+      }
+    }
+  }
+
+  @if $px == $rem {
+    #{$property}: $px;
+  } @else {
+    #{$property}: $px;
+    #{$property}: $rem;
+  }
+}
+/*-- Usage --*/
+/*
+	@include rem(font-size, 2.4rem); //24px
+*/
+
+/* Animations */
+@mixin keyframes($animation-name) {
+    @-webkit-keyframes #{$animation-name} {
+        @content;
+    }
+    @-moz-keyframes #{$animation-name} {
+        @content;
+    }
+    @-ms-keyframes #{$animation-name} {
+        @content;
+    }
+    @-o-keyframes #{$animation-name} {
+        @content;
+    }
+    @keyframes #{$animation-name} {
+        @content;
+    }
+}
+
+@mixin animation($str) {
+  -webkit-animation: #{$str};
+  -moz-animation: #{$str};
+  -ms-animation: #{$str};
+  -o-animation: #{$str};
+  animation: #{$str};
+}
+/*-- Usage --*/
+/*
+	@include keyframes(slide-down) {
+	  0% { opacity: 1; }
+	  90% { opacity: 0; }
+	}
+
+	.element {
+	  width: 100px;
+	  height: 100px;
+	  background: black;
+	  @include animation('slide-down 5s 3');
+	}
+*/
+
+/* Transitions */
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+/*-- Usage --*/
+/*
+	a {
+	  color: gray;
+	  @include transition(color .3s ease);
+	  &:hover {
+	    color: black;
+	  }
+	}
+*/
+
+/* Breakpoints */
+/*
+$xs: 480px;
+$sm: 768px;
+$md: 992px;
+$lg: 1200px;
+*/
+@mixin bp($break) {
+
+  @if $break == hd {
+		@media (min-width: $lg) { @content; }
+	}@else if $break == lg {
+		@media (min-width: $lg) { @content; }
+	}
+	@else if $break == md {
+		@media (min-width: $md) { @content; }
+	}
+	@else if $break == sm {
+		@media (min-width: $sm) { @content; }
+	}
+  @else if $break == xs {
+		@media (min-width: $xs) { @content; }
+	}@else {
+		@media ($break) { @content; }
+	}
+}
+
+/*-- Usage --*/
+/*
+	body {
+  @include bp(xs) {background: yellow;}//320
+  @include bp(sm) {background: green;}//640
+  @include bp(md) {background: yellow;}//960
+  @include bp(lg) {background: red;}//1280
+  @include bp(hd) {background: blue;}//1400
+	}
+*/
+
+/*
+	ESTILOS DE LAYOUT
+	==================
+*/
+.centrar-caja{
+	display: block;
+	clear: both;
+	float: none !important;
+	margin: 0 auto !important;
+}
+
+.centrar-texto,
+.centrar-contenido {
+	text-align: center;
+}
+
+.derecha-texto,
+.derecha-contenido {
+	text-align: right;
+}
+
+.left, .izquierda {
+	float: left;
+}
+
+.right, .derecha {
+	float: right;
+}
+
+/* 	NO PADDING
+	===========
+	class="no-padding" al grupo, le da padding cero a todas sus cajas.
+	class="no-padding" a la caja le da padding cero solo a ella
+*/
+.no-padding{
+	padding: 0 !important;
+}

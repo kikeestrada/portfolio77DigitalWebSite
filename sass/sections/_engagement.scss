@@ -1,0 +1,105 @@
+.engagement{
+	padding: 50px 0;
+	.container{
+		@include bp(md) {
+			background: url(../images/home/engagement/eng_comaBG.png) right center / 200px no-repeat;
+		}//960
+		
+		.row{
+			margin-top: 20px;
+			width: 100%;
+			max-width: 900px;
+			// border:1px solid black;
+			padding:0 20px;
+			@include bp(sm) {padding:0 50px;}
+			div:nth-child(1){
+
+			}
+			div:nth-child(2){
+			}
+		}
+		.row:nth-child(1){
+			h1{
+				font-size: 30px;
+				@include bp(sm) {
+					font-size: 45px;
+				}
+			}
+			h5, h6{
+				margin: 0;
+				font-weight: normal;
+			}
+			h5{ 
+				font-family: 'crimson_text';
+				font-size: 15px;
+				color:#6e6e6e;
+				text-transform: uppercase;
+				@include bp(sm) {font-size: 16px;}
+			}
+			h6{
+				font-family: 'crimson_text';
+				font-size: 15px;
+				@include bp(sm) {font-size: 20px;}
+				color:#6e6e6e;
+			}
+		}
+		.row:nth-child(2){
+			@include bp(sm) {
+				padding-top: 50px;
+				margin: 0 80px 0 80px;}
+		}
+		.row:nth-child(3){
+			@include bp(sm) {
+				padding-top: 50px;
+				margin: 0 80px 0 80px;}
+		}
+		.row:nth-child(4){
+			@include bp(sm) {
+				padding-top: 50px;
+				margin: 0 80px 0 80px;}
+		}
+		.row:nth-child(5){
+			.box{
+		        background: url(../images/home/engagement/eng_points.png) left center / 500px no-repeat;
+		          height: 80px;
+		        @include bp(md) {
+		          background: url(../images/home/engagement/eng_points.png) left center / 700px no-repeat;
+		        }//960
+		      }
+		}
+
+		.row:nth-child(2), .row:nth-child(3), .row:nth-child(4){
+			div:nth-child(1){
+				img{
+					float: left;
+					width: 50px;
+					height: auto;
+					@include bp(sm) {width: 60px;}
+				}
+				h1{
+					padding-top: 7px;
+					color:$tittle1;
+					font-size: 23px;
+					text-transform: uppercase;
+					@include bp(sm) {
+						padding-left: 80px;
+						padding-top: 5px;
+						font-size: 30px;
+					}
+				}
+			}
+			div:nth-child(2){
+				p{
+					font-size: 16px;
+					font-family: 'crimson_text';
+					color:#6e6e6e;
+					padding-left: 50px;
+					@include bp(sm) {
+						padding-left: 80px;
+						font-size: 18px;
+					}
+				}
+			}
+		}
+	}
+}

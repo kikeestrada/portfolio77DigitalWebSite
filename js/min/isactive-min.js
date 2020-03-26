@@ -1,0 +1,1 @@
+!function($){$.fn.visible=function(i){var t=$(this),n=$(window),o=n.scrollTop(),e=o+n.height(),f=t.offset().top,h=f+t.height(),r=i===!0?h:f,s=i===!0?f:h;return e>=s&&r>=o}}(jQuery);
