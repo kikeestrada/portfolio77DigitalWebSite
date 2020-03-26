@@ -1,0 +1,38 @@
+//---------------------------------------GLOBAL----------------------------------
+@import "_vars";
+@import "optimization/_normalize";
+@import "_mixins";
+@import "_fonts";
+@import "_global";
+
+//---------------------------------------animations------------------------------
+@import "animations/slick/_slick-theme";
+@import "animations/slick/_slick";
+@import "animations/slick/_slider";
+
+//--------------------------------------SECTIONS---------------------------------
+@import "sections/_top-nav";
+@import "sections/_header";
+@import "sections/_top-slider";
+@import "sections/_services2";
+@import "sections/_work";
+@import "sections/_clients";
+@import "sections/_engagement";
+@import "sections/_partners";
+@import "sections/_footer";
+
+//--------------------------------------About-----------------------------------
+@import "sections/_about";
+@import "sections/_map";
+@import "sections/_excelence";
+@import "sections/_img-banner";
+@import "sections/_vision";
+
+//--------------------------------------content---------------------------------
+
+@import "sections/_top-banner";
+@import "sections/_content-info";
+
+
+//--------------------------------------Form-----------------------------------
+@import "sections/_form-container";

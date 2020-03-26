@@ -1,0 +1,38 @@
+.map{
+	background: #e1f0f3;
+  	position:relative;
+  	.row{
+  		width:100%;
+  		height:auto;
+  	}
+  	.row:nth-child(1){
+  		margin:auto;
+  			text-align: center;
+  		img{
+  			width: 100%;
+  			max-width: 640px;
+  		}
+  		@include bp(sm) {
+  			display: none !important;
+  		}
+  		
+  	}
+  	.row:nth-child(2){  
+  	display: none !important;	
+  	@include bp(sm) {
+  			display: block !important;
+  		}	
+  		img{
+  			width: 100%;
+  			max-width: 1280px;
+  		}
+  	}
+
+
+  	// background: url(../images/about/about_mapDK2.png) center / 100% no-repeat;
+  	// @include bp(sm) {
+  	// 	background: url(../images/about/about_mapMB.png) center / 100% no-repeat;
+  	// }//640
+  	
+  	
+}

@@ -1,0 +1,128 @@
+.top-slider{
+        padding:0;
+        position:relative;
+        height:100vh;
+
+        *:focus{
+          outline: none;
+        }
+        .home-slider {
+          .slick-slide{
+            width: 100%;
+            height: 100vh;
+          }
+          .slide-1, .slide-3{
+            .slider-copy{
+              width:100%;
+              max-width:550px;
+              // border: 1px solid white;
+              padding:20px;
+
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              -webkit-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+              h1, p{color:white; text-align:center;}
+               h1{
+                // font-size: 45px;
+                padding-bottom: 15px;
+               }
+               p{
+                padding-top: 100px;
+                font-size: 15px;
+                line-height: 25px;
+                   a{
+                      font-family: 'proxima_nova';
+                      font-weight: bold;
+                       color:#8fd7e5;
+                       text-transform:uppercase;
+                       font-size: 13px;
+                       text-decoration: none;
+                   }
+                background: url(../images/home/top-slider/top_slider_coma.png) center top / 70px no-repeat;
+                 @include bp(sm) {background: url(../images/home/top-slider/top_slider_coma.png) left top / 70px no-repeat;}
+               }
+                @include bp(sm) {
+                  top: 65%;
+                  left: 70%;
+                  h1, p{
+                    text-align: left;
+                  }
+                  h1{
+                    font-size: 40px
+                  }
+                  p{
+                    padding-top: 20px;
+                    font-size: 20px;
+                    line-height: 30px;  
+                    padding-left: 60px;                  
+                  }
+                }//1280
+            }
+          }
+
+          .slide-2{
+            .slider-copy{
+              // border:1px solid black;
+              width:100%;
+              max-width:550px;
+              // border: 1px solid white;
+              padding:20px;
+
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              -webkit-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+              h1, p{color:white; text-align:center;}
+               h1{
+                // font-size: 45px;
+                padding-bottom: 15px;
+               }
+               p{
+                padding-top: 100px;
+                font-size: 15px;
+                line-height: 25px;
+                   a{
+                      font-family: 'proxima_nova';
+                      font-weight: bold;
+                       color:#8fd7e5;
+                       text-transform:uppercase;
+                       font-size: 13px;
+                       text-decoration: none;
+                   }
+                background: url(../images/home/top-slider/top_slider_coma.png) center top / 70px no-repeat;
+                 @include bp(sm) {background: url(../images/home/top-slider/top_slider_coma.png) right top / 70px no-repeat;}
+               }
+                @include bp(sm) {
+                  top: 67%;
+                  left: 35%;
+                  h1, p{
+                    text-align: right;
+                  }
+                  h1{
+                    font-size: 40px
+                  }
+                  p{
+                    padding-top: 20px;
+                    font-size: 20px;
+                    line-height: 30px;  
+                    padding-right: 80px;                  
+                  }
+                }//1280
+            }
+          }
+
+
+          .slide-1{
+              background: url(../images/home/top-slider/top_slider_bg1.png) center center / cover;
+          }
+          .slide-2{
+              background: url(../images/home/top-slider/top_slider_bg2.png) center center / cover;
+          }
+          .slide-3{
+              background: url(../images/home/top-slider/top_slider_bg3.png) center center / cover;
+          }
+        }
+}

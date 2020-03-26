@@ -1,0 +1,104 @@
+.about{
+  padding-top: 100px;
+  .container{
+    .tittle{
+      padding:0 80px 0 50px;
+      margin-bottom: 30px;
+      @include bp(sm) { padding:0 80px 0 80px;}
+      @include bp(sm) { margin-bottom: 100px;}
+      h1{
+        font-size: 30px;
+        color: #202221;
+        @include bp(sm) {font-size: 50px;}
+      }
+      p{
+        font-size: 12px;
+      font-family: 'crimson_text';
+      color:#6e6e6e;
+       @include bp(sm) {font-size: 15px;}
+      }
+    }
+    .row{
+      .box{
+        display:table;
+        width:100%;
+        @include bp(md) { width:50%; }
+        float:left;
+        height:250px;
+        @include bp(xs) {height:250px;}//320
+        @include bp(sm) {height:350px;}//640
+        //border:solid 1px black;
+          .box-container{
+            display:table-cell;
+            vertical-align:middle;
+            margin:auto;
+          }
+        }
+        .bg-img{
+          .box-container{
+            // border: 1px solid black;
+            height:70px;
+            width:100%;
+            text-align:center;
+            figure{
+              margin: 0;
+              img{
+                width:100%;
+                max-width: 300px;
+                height:auto;
+                @include bp(xs) {max-width:400px;}//320
+                @include bp(sm) {max-width:500px;}//640
+              }
+            }
+          }
+        }
+        .desc-cont{
+          .box-container{
+            height:100px;
+            width:80%;
+            div:nth-child(1){
+              img{
+                float:left;
+                width:60px;
+                @include bp(xs) {width:60px;}//320
+                @include bp(sm) {width:80px;}//640
+              }
+              h1{
+                font-size:40px;
+                padding-left: 20px;
+                @include bp(xs) {font-size:30px;padding-top:5px;}//320
+                @include bp(sm) {font-size:50px;}//640
+                color:$tittle1;
+              }
+            }
+            div:nth-child(2){
+              background: url(../images/about/about_coma.png) left top / 45px no-repeat;
+              @include bp(sm) {background: url(../images/about/about_coma.png) left top / 80px no-repeat;}//320
+              p{
+                font-size: 15px;
+                padding-left: 50px !important;
+                padding-top: 10px !important;
+                @include bp(sm) {
+                  font-size:11px;
+                  padding-top: 30px !important;
+                  padding-left:80px !important;
+                }//320
+                @include bp(sm) {
+                  font-size:20px;
+                  padding-left:85px;
+                }//640
+              }
+            }
+          }
+        }
+      }
+      .row:nth-child(3) {
+        .box:nth-child(1){
+          @include bp(md) {
+            float:right;
+          }
+        }
+        .box:nth-child(2){}
+      }
+  }
+}

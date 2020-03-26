@@ -1,0 +1,340 @@
+
+/*
+ ######    ##          #######   ########      ###     ##         
+##    ##   ##         ##     ##  ##     ##    ## ##    ##         
+##         ##         ##     ##  ##     ##   ##   ##   ##         
+##   ####  ##         ##     ##  ########   ##     ##  ##         
+##    ##   ##         ##     ##  ##     ##  #########  ##         
+##    ##   ##         ##     ##  ##     ##  ##     ##  ##         
+ ######    ########    #######   ########   ##     ##  ########   
+*/
+
+h2 {
+	font-size: 36px;
+	color: #20238c;
+	margin-bottom: 85px;
+}
+
+h3 {
+	font-size: 14px;
+	color: #6d6d6d;
+	border-bottom: 1px solid #6d6d6d;
+	line-height: 32px;
+}
+
+
+p {
+	font-size: 16px;
+	line-height: 28px;
+}
+
+
+/*
+ ######    ##          #######   ########      ###     ##         
+##    ##   ##         ##     ##  ##     ##    ## ##    ##         
+##         ##         ##     ##  ##     ##   ##   ##   ##         
+##   ####  ##         ##     ##  ########   ##     ##  ##         
+##    ##   ##         ##     ##  ##     ##  #########  ##         
+##    ##   ##         ##     ##  ##     ##  ##     ##  ##         
+ ######    ########    #######   ########   ##     ##  ########   
+*/
+/*
+########    #######   ########   
+   ##      ##     ##  ##     ##  
+   ##      ##     ##  ##     ##  
+   ##      ##     ##  ########   
+   ##      ##     ##  ##         
+   ##      ##     ##  ##         
+   ##       #######   ##         
+*/
+.topTitle {
+	background-image: url('../images/77Content_01.png');
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+.topImage {
+	background-image: url('../images/77Content_02.png');
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+.topTitleInside {
+	padding-top: 58.42%;
+}
+
+/*
+########    #######   ########   
+   ##      ##     ##  ##     ##  
+   ##      ##     ##  ##     ##  
+   ##      ##     ##  ########   
+   ##      ##     ##  ##         
+   ##      ##     ##  ##         
+   ##       #######   ##         
+*/
+
+
+
+/*
+ ######    ########   ########   ##     ##  ####   ######    ########    ######    
+##    ##   ##         ##     ##  ##     ##   ##   ##    ##   ##         ##    ##   
+##         ##         ##     ##  ##     ##   ##   ##         ##         ##         
+ ######    ######     ########   ##     ##   ##   ##         ######      ######    
+      ##   ##         ##   ##     ##   ##    ##   ##         ##               ##   
+##    ##   ##         ##    ##     ## ##     ##   ##    ##   ##         ##    ##   
+ ######    ########   ##     ##     ###     ####   ######    ########    ######    
+*/
+
+.form-area
+{margin-top:100px;}
+
+.services {
+	margin-top: 160px;
+}
+
+.servicesRows {
+	margin-top: 60px;
+}
+
+.servImage1 {
+	padding-left: 0px;
+	max-width: 125px;
+	padding-right: 5px;
+}
+
+.service1Content {		
+	margin-top: 20px;
+	padding-left: 0px;
+}
+
+
+.services h4 {
+	font-size: 18px;
+	font-weight: normal;
+	line-height: 28px;
+}
+
+
+.capabilities {
+	margin-top: 100px;
+}
+
+.capabilities h5 {
+	font-size: 42px;
+	margin-top: 45px;
+	margin-bottom: 25px;
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+	.services h4 {
+		font-size: 20px;
+		font-weight: normal;
+	}
+}
+
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+	 .xsContainer {
+		 	display: block;
+		 	margin-top: 15px;
+		 
+		 }
+
+	 .services h4 {
+	 	font-size: 20px;
+	 	font-weight: bold;
+	 }
+
+	 .xsContainer:before,
+	 .xsContainer:after {
+	 	content: '';
+	 	display: table;
+	 }
+
+	 .xsContainer:after {
+	 	clear: both;
+	 }
+
+	 .service1Content {
+		margin-top: 28px;
+		padding-left: 0px;
+	 }
+
+	
+	.first-inside {
+		padding-top: 40%;
+	}	
+
+	.services {
+			margin-top:40px;
+	}
+
+	h2 {
+		font-size: 24px;
+		margin-bottom: 40px;
+	}
+
+	.servicesRows {
+    	margin-top: 30px;
+	}
+
+}
+
+/*
+ ######    ########   ########   ##     ##  ####   ######    ########    ######    
+##    ##   ##         ##     ##  ##     ##   ##   ##    ##   ##         ##    ##   
+##         ##         ##     ##  ##     ##   ##   ##         ##         ##         
+ ######    ######     ########   ##     ##   ##   ##         ######      ######    
+      ##   ##         ##   ##     ##   ##    ##   ##         ##               ##   
+##    ##   ##         ##    ##     ## ##     ##   ##    ##   ##         ##    ##   
+ ######    ########   ##     ##     ###     ####   ######    ########    ######    
+*/
+
+.titleForm {
+	margin-top: 40px;
+}
+
+h6 {
+	font-size: 42px;
+	text-decoration: underline;
+	color: #4e4e4e;
+	text-align: center;
+}
+
+.titleForm p {
+	text-align: center;
+	margin-top: 20px;
+}
+
+textarea.form-control {
+    height: 80px;
+	resize: none;
+}
+.mainForm {
+	margin-top: 40px;
+}
+
+.form-control {
+	border-radius: 0px;
+	border: 2px solid #202020;
+	height: 55px;
+}
+
+.form-group button {
+	margin: 0 auto;
+}
+
+.form-group button[type='submit'] {
+	background: #8ac6d0;
+    margin-left: -15px;
+}
+
+.btn {
+	border-radius: 0px;
+	border: none;
+	height: 45px;
+	width: 130px;
+	font-weight: bold;
+	font-size: 24px;
+}
+
+
+.form-group input::-webkit-input-placeholder {
+   color: #202020;
+}
+
+.form-group input:-moz-placeholder { /* Firefox 18- */
+   color: #202020;  
+}
+
+.form-group input::-moz-placeholder {  /* Firefox 19+ */
+   color: #202020;  
+}
+
+.form-group input:-ms-input-placeholder {  
+   color: #202020;  
+}
+
+.form-group textarea::-webkit-input-placeholder {
+   color: #202020;
+}
+
+.form-group textarea:-moz-placeholder { /* Firefox 18- */
+   color: #202020;  
+}
+
+.form-group textarea::-moz-placeholder {  /* Firefox 19+ */
+   color: #202020;  
+}
+
+.form-group textarea:-ms-input-placeholder {  
+   color: #202020;  
+}
+
+.contac-info{
+	text-align: right !important;
+	float: right;
+    margin-right: 19%;
+}
+/*
+      .social_networks_contact{
+            width: 28% !important;
+            min-width: 380px !important;
+            position: relative;
+            right: 40px;
+            top: -280px;
+            margin-top: 100px;
+            float: left !important;
+            @include bp(sm) {
+                right: -100px;
+                float: right !important;
+                top: -180px;
+              }
+            @include bp(lg) {
+                top: 25px;
+              }
+              li{
+                float:left;
+                list-style-type: none;
+                margin-right: 45px;
+                display: inline;
+                a{
+                  img{
+                    width:90%;
+                    height:auto;
+                  }
+                }
+              }
+              #icono_footer_facebook{
+                  margin-top: -6px;
+              }
+              #icono_footer_linked{
+                  margin-top: -3px;
+              }
+              #icono_footer_google{
+                  margin-top: 5px;
+              }
+      }
+
+/*
+@media (min-width: 992px)
+{
+        .social_networks{
+              width: 28% !important;
+              min-width: 360px;
+              position: relative;
+              right: -47%;
+              top: 25px;
+              margin-top: 100px;
+            }
+}
+ ######     #######   ##    ##   ########      ###      ######    ########   
+##    ##   ##     ##  ###   ##      ##        ## ##    ##    ##      ##      
+##         ##     ##  ####  ##      ##       ##   ##   ##            ##      
+##         ##     ##  ## ## ##      ##      ##     ##  ##            ##      
+##         ##     ##  ##  ####      ##      #########  ##            ##      
+##    ##   ##     ##  ##   ###      ##      ##     ##  ##    ##      ##      
+ ######     #######   ##    ##      ##      ##     ##   ######       ##      
+*/
+

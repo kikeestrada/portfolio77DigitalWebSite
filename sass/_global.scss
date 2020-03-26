@@ -1,0 +1,56 @@
+// RWD Bases
+
+//aqui aplicamos a todos los elementos el box-sizing: border-box
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html{
+  //font-size: 1em;
+  //line-height: 1.4;
+}
+
+//reset para el body
+body {
+	margin: 0;
+	padding: 0;
+  //font: 16px/26px crimson_text;
+}
+
+// Imágenes responsive
+// img {
+// 	max-width: 100%;
+// 	height: auto;
+// }
+
+//aplicamos a todos los elementos el clearfix
+div, section,header, footer, main, ul, .container, .row, .box, nav, ul, li{
+  position:relative;
+  @include clearfix;
+}
+
+//definimos un ancho para esta clase especifica
+.container{
+  width:100%;
+  max-width:1280px;
+  margin:0 auto;
+}
+
+//Definimos el fon especifico para estos
+//elementes de texto deacuerdo con el creative
+h1{
+  font-family: 'proxima_nova';
+  margin:0;
+}
+p{
+  font-family: 'crimson_text';
+  font-size:18px;
+  margin:0;
+}
+.wrapp{
+  // overflow-x: hidden;
+}
